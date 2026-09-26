@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị Infographic và Video MP4</title>
+    <style>
+        /* Tùy chỉnh giao diện chung */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #2b6cb0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        /* Tùy chỉnh khung hiển thị PDF Infographic */
+        .infographic-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .infographic-container iframe {
+            width: 100%;
+            height: 650px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Tùy chỉnh Video MP4 */
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Nội Dung Đa Phương Tiện</h1>
+
+        <!-- Phần 1: Hiển thị Infographic PDF từ đường dẫn GitHub bằng iframe -->
+        <section>
+            <h2 class="section-title">1. Infographic Tóm Tắt</h2>
+            <div class="infographic-container">
+                <iframe src="https://raw.githubusercontent.com/Evelley/B-i-th5/main/Infographic%20l%E1%BB%A3i%20%C3%ADch%20c%C3%B4ng%20ngh%E1%BB%87%20s%E1%BB%91%20trong%20h%E1%BB%8Dc%20t%E1%BA%ADp%20(1)%20(1).pdf"></iframe>
+            </div>
+        </section>
+
+        <!-- Phần 2: Hiển thị Video MP4 -->
+        <section>
+            <h2 class="section-title">2. Video Hướng Dẫn (MP4)</h2>
+            <div class="video-container">
+                <!-- Thay đường dẫn video .mp4 của bạn vào thuộc tính src dưới đây -->
+                <video controls poster="https://via.placeholder.com/800x450.png?text=Xem+Video">
+                    <source src="duong-dan-video-cua-ban.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+                </video>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
